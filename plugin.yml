@@ -1,0 +1,8 @@
+name: FarmTools
+main: plugin.riftiro.farmtools.FarmTools
+version: 0.1
+api-version: 1.13
+commands:
+   farm:
+      description: Prints out 'Hello World!'
+      usage: /farm

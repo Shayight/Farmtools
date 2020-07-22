@@ -4,5 +4,5 @@ version: 0.1
 api-version: 1.13
 commands:
    farm:
-      description: Prints out 'Hello World!'
+      description: Opens a GUI with the settings for Riftiro's FarmTools.
       usage: /farm

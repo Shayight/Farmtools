@@ -6,7 +6,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import plugin.riftiro.farmtools.commands.CommandFarm;
 import plugin.riftiro.farmtools.events.ClickEvent;
 import plugin.riftiro.farmtools.events.OnBreak;
-import plugin.riftiro.farmtools.events.RightClickEvent;
 
 public class FarmTools extends JavaPlugin {
 	//Run when program is enabled
@@ -16,7 +15,6 @@ public class FarmTools extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		getCommand("farm").setExecutor(new CommandFarm());	
-		manager.registerEvents(new RightClickEvent(), this);
 		manager.registerEvents(new OnBreak(), this);
 		manager.registerEvents(new ClickEvent(), this);
 	}
